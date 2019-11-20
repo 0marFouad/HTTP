@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fo2sh/CLionProjects/HTTP/Client/CommandReader.cpp
+CommandReader.h
+/home/fo2sh/CLionProjects/HTTP/Client/CommandReader.h
+
+/home/fo2sh/CLionProjects/HTTP/Client/CommandReader.h
+string.h
+-
+unistd.h
+-
+stdio.h
+-
+stdlib.h
+-
+sys/socket.h
+-
+sys/types.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+iostream
+-
+bits/stdc++.h
+-
+

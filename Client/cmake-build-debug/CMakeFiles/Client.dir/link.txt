@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Client.dir/main.cpp.o CMakeFiles/Client.dir/Socket.cpp.o CMakeFiles/Client.dir/CommandReader.cpp.o CMakeFiles/Client.dir/HandleGET.cpp.o CMakeFiles/Client.dir/Utils.cpp.o CMakeFiles/Client.dir/ParseResponse.cpp.o CMakeFiles/Client.dir/HandlePOST.cpp.o CMakeFiles/Client.dir/Starter.cpp.o  -o Client 
