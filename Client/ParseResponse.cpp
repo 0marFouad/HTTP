@@ -43,13 +43,14 @@ string getFilename(char* buffer, int idx){
 
 
 
-response parse_response(char* buffer,int &headerSize){
+response parse_response(char* buffer){
     response res;
     if(buffer == not_found){
         res.status_code = 404;
         return res;
     }
     res.status_code = 200;
+    int headerSize = 0;
     while(strncmp(buffer + headerSize, "\r\n\r\n", 4) != 0){
         if(strncmp(buffer + headerSize, "Content-Length: ", 16) == 0){
             res.content_length = getContentLength(buffer,headerSize+16);

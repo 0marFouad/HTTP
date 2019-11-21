@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/fo2sh/CLionProjects/HTTP/Server/HandleGET.cpp
-HandleGET.h
-/home/fo2sh/CLionProjects/HTTP/Server/HandleGET.h
-
 /home/fo2sh/CLionProjects/HTTP/Server/HandleGET.h
 stdio.h
 -
@@ -27,10 +23,6 @@ Utils.h
 /home/fo2sh/CLionProjects/HTTP/Server/Utils.h
 Socket.h
 /home/fo2sh/CLionProjects/HTTP/Server/Socket.h
-
-/home/fo2sh/CLionProjects/HTTP/Server/HandlePOST.cpp
-HandlePOST.h
-/home/fo2sh/CLionProjects/HTTP/Server/HandlePOST.h
 
 /home/fo2sh/CLionProjects/HTTP/Server/HandlePOST.h
 stdio.h
@@ -117,12 +109,6 @@ sys/time.h
 -
 sys/stat.h
 -
-
-/home/fo2sh/CLionProjects/HTTP/Server/main.cpp
-iostream
--
-Utils.h
-/home/fo2sh/CLionProjects/HTTP/Server/Utils.h
-HandleGET.h
-/home/fo2sh/CLionProjects/HTTP/Server/HandleGET.h
+ParseRequest.h
+/home/fo2sh/CLionProjects/HTTP/Server/ParseRequest.h
 

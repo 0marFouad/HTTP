@@ -44,7 +44,7 @@ vector<command> ReadCommands() {
         cout << s << endl;
         command cur = ParseCommand(s);
         cur.extension = getExtension(cur.file);
-        commands.push_back(ParseCommand(s));
+        commands.push_back(cur);
     }
     return commands;
 }

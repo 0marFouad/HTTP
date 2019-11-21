@@ -1,10 +1,29 @@
 #include "Utils.h"
 
 
-bool isHeaderComplete(char* buffer){
-    char *search = "\r\n\r\n";
-    char *ptr = strstr(buffer, search);
-    return (ptr != NULL);
+bool isHeaderComplete(char* buffer, int len, int &headerSize){
+    int i = 0;
+    while(i+4<len){
+        if(strncmp(buffer + i, "\r\n\r\n", 4) == 0){
+            headerSize = i + 4;
+            return true;
+        }
+        i++;
+    }
+    return false;
+}
+
+
+bool isThereContentLength(char* buffer, int size, int &content_length){
+    int i = 0;
+    while(i+16<size){
+        if(strncmp(buffer + i, "Content-Length: ", 16) == 0){
+            content_length = getContentLength(buffer,i+16);
+            return true;
+        }
+        i++;
+    }
+    return false;
 }
 
 void writeToFile(char* body, char* filename,int content_length){

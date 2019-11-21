@@ -18,7 +18,7 @@
 #define FAIL 0
 
 int send(char *buffer, int buffer_size);
-response recvGet();
+response recvGet(char* buffer);
 void recvPost();
 int establish_connection(char* server_ip, int server_port);
 void closeConnection();

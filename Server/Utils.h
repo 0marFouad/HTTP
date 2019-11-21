@@ -18,10 +18,12 @@
 #include <unistd.h>
 #include <sys/time.h>
 #include <sys/stat.h>
+#include "ParseRequest.h"
 
 using namespace std;
 
-bool isHeaderComplete(char* buffer);
+bool isHeaderComplete(char* buffer,int len,int &headerSize);
+bool isThereContentLength(char* buffer, int size, int &content_length);
 void writeToFile(char* body, char* filename,int content_length);
 vector<char> readFromFile(char* filename, long &bufferSize);
 string getString(char* ptr);

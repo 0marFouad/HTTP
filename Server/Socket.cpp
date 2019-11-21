@@ -18,13 +18,13 @@ int waiting_for_request(int client_socket){
 void handle_connection(int client_socket) {
     while(1){
         recv(client_socket);
-        int status = waiting_for_request(client_socket);
-        if(status == 0){
-            printf("No more requests from client with fd = %d within the last 5 seconds, So the server will close the client connection\n",client_socket);
-            printf("Timeout Close Connection");
-            close(client_socket);
-            break;
-        }
+        //int status = waiting_for_request(client_socket);
+//        if(status == 0){
+//            printf("No more requests from client with fd = %d within the last 5 seconds, So the server will close the client connection\n",client_socket);
+//            printf("Timeout Close Connection");
+//            close(client_socket);
+//            break;
+//        }
     }
     connected_clients--;
 }
@@ -58,10 +58,11 @@ void start_server(unsigned short server_port){
             printf("Reached the max limit number of connections, So server can't handle that client connection\n");
             continue;
         }
-        printf("New Thread is working\n");
-        std::thread t(handle_connection, client_socket);
-        t.detach();
-        connected_clients++;
+        handle_connection(client_socket);
+//        printf("New Thread is working\n");
+//        std::thread t(handle_connection, client_socket);
+//        t.detach();
+//        connected_clients++;
     }
 }
 
@@ -93,21 +94,39 @@ int send(char *buffer, int buffer_size, int client_socket) {
 }
 
 void recv(int client_socket){
-    char* buffer = (char *) malloc(52428800);
+    struct timeval tv;
+    tv.tv_sec = 5;
+    tv.tv_usec = 0;
+    setsockopt(client_socket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
+
+    char* buffer = (char *) malloc(5000);
     int receivedSize = 0;
-    while(!isHeaderComplete(buffer)){
-        int status = recv(client_socket, buffer, 52428800, MSG_PEEK);
+    int headerSize = 0;
+    int status = 0;
+    while(status = recv(client_socket, buffer + receivedSize, 100, 0)){
+        if(status == -1){
+            break;
+        }
         receivedSize += status;
-        if(status < 0){
-            perror("error receiving messages");
-            free(buffer);
-            return;
+        int content_length = 0;
+        if(isHeaderComplete(buffer, receivedSize, headerSize) && !isThereContentLength(buffer, headerSize, content_length)){
+            handleGetRequest(buffer, client_socket);
+            buffer = &buffer[headerSize];
+            receivedSize -= (headerSize);
+        }else if(isHeaderComplete(buffer, receivedSize, headerSize) && isThereContentLength(buffer, headerSize, content_length)){
+            if(receivedSize >= headerSize + content_length){
+                handlePostRequest(buffer,client_socket,headerSize + content_length);
+                buffer = &buffer[headerSize + content_length + 2];
+                receivedSize -= (headerSize + content_length + 2);
+            }
         }
     }
-    if(buffer[0] == 'G'){
-        handleGetRequest(buffer, client_socket);
-    }else{
-        handlePostRequest(buffer,client_socket,receivedSize);
+    if(receivedSize > 0){
+        if(buffer[0] == 'G'){
+            handleGetRequest(buffer, client_socket);
+        }else{
+            handlePostRequest(buffer,client_socket,receivedSize);
+        }
     }
 }
 

@@ -10,6 +10,6 @@
 #include "Utils.h";
 
 void sendGetRequest(command c);
-void receiveGetRequest();
+void receiveGetRequest(char* buffer);
 
 #endif //CLIENT_HANDLEGET_H

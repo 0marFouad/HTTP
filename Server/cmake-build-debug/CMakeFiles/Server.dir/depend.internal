@@ -26,6 +26,7 @@ CMakeFiles/Server.dir/Socket.cpp.o
  /home/fo2sh/CLionProjects/HTTP/Server/Socket.h
  /home/fo2sh/CLionProjects/HTTP/Server/Utils.h
 CMakeFiles/Server.dir/Utils.cpp.o
+ /home/fo2sh/CLionProjects/HTTP/Server/ParseRequest.h
  /home/fo2sh/CLionProjects/HTTP/Server/Utils.cpp
  /home/fo2sh/CLionProjects/HTTP/Server/Utils.h
 CMakeFiles/Server.dir/main.cpp.o

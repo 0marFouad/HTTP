@@ -21,7 +21,3 @@ void sendPostRequest(command c){
     message[msg.size() + fileSize + 1] = '\n';
     send(message, msg.size() + fileSize + 2);
 }
-
-void receivePostRequest(){
-    recvPost();
-}

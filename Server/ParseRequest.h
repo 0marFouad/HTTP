@@ -20,6 +20,7 @@ typedef struct{
 } post_request;
 
 post_request parse_post_request(char* buffer,int &headerSize);
+int getContentLength(char* buffer, int idx);
 
 
 #endif //SERVER_PARSEREQUEST_H

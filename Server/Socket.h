@@ -1,7 +1,3 @@
-//
-// Created by fo2sh on 19/11/19.
-//
-
 #ifndef SERVER_SOCKET_H
 #define SERVER_SOCKET_H
 

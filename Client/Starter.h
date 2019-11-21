@@ -16,6 +16,7 @@
 #include "Socket.h"
 #include "HandlePOST.h"
 #include "HandleGET.h"
+#include "Utils.h"
 
 
 #endif //CLIENT_STARTER_H

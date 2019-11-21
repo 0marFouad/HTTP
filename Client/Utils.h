@@ -17,6 +17,7 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include <sys/time.h>
+#include "ParseResponse.h"
 
 using namespace std;
 
@@ -25,5 +26,7 @@ void writeToFile(char* body, char* filename,int content_length);
 vector<char> readFromFile(char* filename, long &bufferSize);
 string getString(char* ptr);
 string getContentType(char* filename);
+bool isHeaderComplete(char* buffer, int len, int &headerSize);
+bool isThereContentLength(char* buffer, int size, int &content_length);
 
 #endif

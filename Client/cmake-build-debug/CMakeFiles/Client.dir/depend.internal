@@ -36,6 +36,7 @@ CMakeFiles/Client.dir/Starter.cpp.o
  /home/fo2sh/CLionProjects/HTTP/Client/Starter.h
  /home/fo2sh/CLionProjects/HTTP/Client/Utils.h
 CMakeFiles/Client.dir/Utils.cpp.o
+ /home/fo2sh/CLionProjects/HTTP/Client/ParseResponse.h
  /home/fo2sh/CLionProjects/HTTP/Client/Utils.cpp
  /home/fo2sh/CLionProjects/HTTP/Client/Utils.h
 CMakeFiles/Client.dir/main.cpp.o

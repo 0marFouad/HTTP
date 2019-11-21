@@ -17,6 +17,7 @@ typedef struct{
 } response;
 
 string getContentExtension(char* buffer, int idx);
-response parse_response(char* buffer,int &headerSize);
+response parse_response(char* buffer);
+int getContentLength(char* buffer, int idx);
 
 #endif

@@ -16,8 +16,8 @@ void sendGetRequest(command c){
     }
 }
 
-void receiveGetRequest(){
-    response res = recvGet();
+void receiveGetRequest(char* buffer){
+    response res = recvGet(buffer);
     string complete_name = res.filename;
     writeToFile(res.body,&complete_name[0],res.content_length);
 }

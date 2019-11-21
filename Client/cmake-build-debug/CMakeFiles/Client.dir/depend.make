@@ -35,6 +35,7 @@ CMakeFiles/Client.dir/Starter.cpp.o: ../Starter.cpp
 CMakeFiles/Client.dir/Starter.cpp.o: ../Starter.h
 CMakeFiles/Client.dir/Starter.cpp.o: ../Utils.h
 
+CMakeFiles/Client.dir/Utils.cpp.o: ../ParseResponse.h
 CMakeFiles/Client.dir/Utils.cpp.o: ../Utils.cpp
 CMakeFiles/Client.dir/Utils.cpp.o: ../Utils.h
 
