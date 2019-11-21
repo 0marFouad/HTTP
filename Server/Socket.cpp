@@ -3,27 +3,32 @@
 struct sockaddr_in server_addr;
 int server_socket;
 int connected_clients;
-
-int waiting_for_request(int client_socket){
-    struct timeval tv;
-    tv.tv_sec = 5;
-    tv.tv_usec = 0;
-    fd_set rfds;
-    FD_ZERO(&rfds);
-    FD_SET(client_socket, &rfds);
-    int retval = select(1, &rfds, NULL, NULL, &tv);
-    return retval;
-}
+int timeout;
+mutex connection_lock;
 
 void handle_connection(int client_socket) {
     recv(client_socket);
-        //int status = waiting_for_request(client_socket);
-//        if(status == 0){
-//            printf("No more requests from client with fd = %d within the last 5 seconds, So the server will close the client connection\n",client_socket);
-//            printf("Timeout Close Connection");
-//            close(client_socket);
-//            break;
-//        }
+}
+
+void add_connection(){
+    connection_lock.lock();
+    connected_clients++;
+    connection_lock.unlock();
+    cout << "Connection Increase: " << connected_clients << endl;
+}
+
+void remove_connection(){
+    connection_lock.lock();
+    connected_clients--;
+    connection_lock.unlock();
+    cout << "Connection Decrease: " << connected_clients << endl;
+}
+
+void get_timeout(){
+    cout << "Timeout :" << timeout << endl;
+    connection_lock.lock();
+    timeout = MAX_POSSIBLE_CONNECTIONS - connected_clients;
+    connection_lock.unlock();
 }
 
 void start_server(unsigned short server_port){
@@ -55,11 +60,9 @@ void start_server(unsigned short server_port){
             printf("Reached the max limit number of connections, So server can't handle that client connection\n");
             continue;
         }
-        handle_connection(client_socket);
-//        printf("New Thread is working\n");
-//        std::thread t(handle_connection, client_socket);
-//        t.detach();
-//        connected_clients++;
+        add_connection();
+        thread t(handle_connection,client_socket);
+        t.detach();
     }
 }
 
@@ -73,15 +76,14 @@ void accept_client(int &client_socket){
 }
 
 void close_connection(int client_socket){
+    remove_connection();
     close(client_socket);
 }
 
 int send(char *buffer, int buffer_size, int client_socket) {
     int sent = 0;
-    const int TIMEOUT = 5;
-    clock_t curTime = clock();
-    while(sent < buffer_size && (clock() - curTime)/CLOCKS_PER_SEC < TIMEOUT) {
-        sent += send(client_socket, (void *)(buffer + sent), buffer_size - sent, 0);
+    while(sent < buffer_size) {
+        sent += send(client_socket, buffer + sent, buffer_size, 0);
     }
     if(sent != buffer_size) {
         perror("Not All Characters Were Sent");
@@ -92,14 +94,15 @@ int send(char *buffer, int buffer_size, int client_socket) {
 
 void recv(int client_socket){
     struct timeval tv;
-    tv.tv_sec = 5;
+    get_timeout();
+    tv.tv_sec = timeout;
     tv.tv_usec = 0;
     setsockopt(client_socket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 
     char* buffer = (char *) malloc(BUFFERSIZE);
     int receivedSize = 0;
     int headerSize = 0;
-    int status = 0;
+    int status = -1;
     while(status = recv(client_socket, buffer + receivedSize, 100, 0)){
         if(status == -1){
             if(receivedSize > 0){
@@ -126,15 +129,18 @@ void recv(int client_socket){
             }
         }
         if(status < 100 && receivedSize > 0){
-            break;
+            if(buffer[0] == 'G'){
+                handleGetRequest(buffer, client_socket);
+                receivedSize = 0;
+                headerSize = 0;
+            }else{
+                handlePostRequest(buffer,client_socket);
+                receivedSize = 0;
+                headerSize = 0;
+            }
         }
     }
-    if(receivedSize > 0){
-        if(buffer[0] == 'G'){
-            handleGetRequest(buffer, client_socket);
-        }else{
-            handlePostRequest(buffer,client_socket);
-        }
+    if(status == 0){
+        close_connection(client_socket);
     }
 }
-

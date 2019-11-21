@@ -21,17 +21,16 @@ void startClient(char* server_ip, char* server_port) {
         }
     }
 
-    struct timeval tv;
-    tv.tv_sec = 2;
-    tv.tv_usec = 0;
-    setsockopt(client_socket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
-
     char* buffer = (char *) malloc(BUFFERSIZE);
     int receivedSize = 0;
     int headerSize = 0;
     int status = 0;
-    while(status = recv(client_socket, buffer + receivedSize, BUFFERSIZE, 0)){
+    while(status = recv(client_socket, buffer + receivedSize, 100, 0)){
         if(status == -1){
+            if(receivedSize > 0 && buffer[0] == 'G'){
+                receiveGetRequest(buffer);
+            }
+            closeConnection();
             break;
         }
         receivedSize += status;
@@ -46,9 +45,6 @@ void startClient(char* server_ip, char* server_port) {
                 receivedSize -= (headerSize + content_length + 2);
             }
         }
-    }
-    if(buffer[0] == 'G'){
-        receiveGetRequest(buffer);
     }
     closeConnection();
 }
