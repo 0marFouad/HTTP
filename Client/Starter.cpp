@@ -12,6 +12,7 @@ void startClient(char* server_ip, char* server_port) {
     }
     printf("Connected Successfully to the server\n");
     vector<command> commands = ReadCommands();
+    auto t1 = std::chrono::high_resolution_clock::now();
     for(int i=0;i<commands.size();i++){
         command cur = commands[i];
         if(cur.method == "GET"){
@@ -46,6 +47,9 @@ void startClient(char* server_ip, char* server_port) {
             }
         }
     }
+    auto t2 = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
+    cout << "Duration" << duration << endl;
     closeConnection();
 }
 

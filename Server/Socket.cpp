@@ -129,14 +129,22 @@ void recv(int client_socket){
             }
         }
         if(status < 100 && receivedSize > 0){
-            if(buffer[0] == 'G'){
-                handleGetRequest(buffer, client_socket);
-                receivedSize = 0;
-                headerSize = 0;
-            }else{
-                handlePostRequest(buffer,client_socket);
-                receivedSize = 0;
-                headerSize = 0;
+            while(receivedSize > 0){
+                if(buffer[0] == 'G'){
+                    int headerS = 0;
+                    isHeaderComplete(buffer, receivedSize, headerS);
+                    handleGetRequest(buffer, client_socket);
+                    receivedSize -= headerS;
+                    buffer = &buffer[headerS];
+                }else{
+                    int headerS = 0;
+                    int contentL = 0;
+                    isHeaderComplete(buffer, receivedSize, headerS);
+                    isThereContentLength(buffer, headerSize, contentL);
+                    handlePostRequest(buffer,client_socket);
+                    buffer = &buffer[headerSize + content_length + 2];
+                    receivedSize -= (headerSize + content_length + 2);
+                }
             }
         }
     }

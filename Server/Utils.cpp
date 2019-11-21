@@ -3,7 +3,7 @@
 
 bool isHeaderComplete(char* buffer, int len, int &headerSize){
     int i = 0;
-    while(i+4<len){
+    while(i+3<len){
         if(strncmp(buffer + i, "\r\n\r\n", 4) == 0){
             headerSize = i + 4;
             return true;
