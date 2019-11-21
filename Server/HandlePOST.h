@@ -14,6 +14,6 @@
 #include "Socket.h"
 #include "ParseRequest.h"
 
-void handlePostRequest(char* buffer, int client_socket,int receivedSize);
+void handlePostRequest(char* buffer, int client_socket);
 
 #endif //SERVER_HANDLEPOST_H

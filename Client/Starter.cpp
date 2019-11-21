@@ -3,18 +3,7 @@
 #define BUFFERSIZE 1048576
 
 
-int waiting_for_request(int client_socket){
-    struct timeval tv;
-    tv.tv_sec = 5;
-    tv.tv_usec = 0;
-    fd_set rfds;
-    FD_ZERO(&rfds);
-    FD_SET(client_socket, &rfds);
-    int retval = select(1, &rfds, NULL, NULL, &tv);
-    return retval;
-}
-
-void startClient(char* server_ip, char* server_port, char* commands_file) {
+void startClient(char* server_ip, char* server_port) {
     printf("Trying to connect to %s on port %s\n",server_ip, server_port);
     int client_socket = establish_connection(server_ip, atoi(server_port));
     if(client_socket == 0){
@@ -33,15 +22,15 @@ void startClient(char* server_ip, char* server_port, char* commands_file) {
     }
 
     struct timeval tv;
-    tv.tv_sec = 5;
+    tv.tv_sec = 2;
     tv.tv_usec = 0;
     setsockopt(client_socket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 
-    char* buffer = (char *) malloc(5000);
+    char* buffer = (char *) malloc(BUFFERSIZE);
     int receivedSize = 0;
     int headerSize = 0;
     int status = 0;
-    while(status = recv(client_socket, buffer + receivedSize, 20, 0)){
+    while(status = recv(client_socket, buffer + receivedSize, BUFFERSIZE, 0)){
         if(status == -1){
             break;
         }
@@ -71,6 +60,6 @@ int main(int argc, char** argv){
     }
     char* server_ip = argv[1];
     char* server_port = argv[2];
-    startClient(server_ip, server_port, "commands.txt");
+    startClient(server_ip, server_port);
     return 0;
 }

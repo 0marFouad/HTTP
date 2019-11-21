@@ -13,47 +13,27 @@
   <component name="ChangeListManager">
     <list default="true" id="eeed9503-d593-4f2e-a012-83cfb4733616" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommandReader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CommandReader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandleGET.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HandleGET.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandleGET.h" beforeDir="false" afterPath="$PROJECT_DIR$/HandleGET.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandlePOST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HandlePOST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParseResponse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParseResponse.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParseResponse.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParseResponse.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Socket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Socket.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Socket.h" beforeDir="false" afterPath="$PROJECT_DIR$/Socket.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Starter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Starter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Starter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Starter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/Utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/CommandReader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/CommandReader.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/HandleGET.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/HandleGET.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/HandlePOST.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/HandlePOST.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/ParseResponse.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/ParseResponse.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/Socket.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/Socket.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/Starter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/Starter.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/Utils.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/Utils.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Client.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Client" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Client" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omar.html" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/omar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/html; charset=UTF-8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omar.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/omar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omar.txtplain" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/ParseRequest.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/ParseRequest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/HandleGET.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/HandleGET.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/HandleGET.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/HandleGET.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/HandlePOST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/HandlePOST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/HandlePOST.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/HandlePOST.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/Socket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Socket.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/Socket.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Socket.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/Utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Utils.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/Utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/Utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/HandleGET.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/HandleGET.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/HandlePOST.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/HandlePOST.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/Socket.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/Socket.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/Utils.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/Utils.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/CMakeFiles/Server.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/Server" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/Server" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/omar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/omar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/cmake-build-debug/omar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/cmake-build-debug/omar.txt" afterDir="false" />
@@ -72,10 +52,12 @@
         <counts>
           <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.37" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,35 +66,35 @@
           <entry key="cbp" value="1" />
           <entry key="cpp" value="40" />
           <entry key="h" value="33" />
-          <entry key="html" value="5" />
+          <entry key="html" value="6" />
           <entry key="html; charset=UTF-8" value="2" />
           <entry key="png" value="9" />
-          <entry key="txt" value="22" />
+          <entry key="txt" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Disassembly" value="2" />
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="6" />
           <entry key="Image" value="9" />
           <entry key="ObjectiveC" value="73" />
-          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="7759" />
+          <entry key="cpp" value="7775" />
           <entry key="h" value="698" />
-          <entry key="html" value="57" />
+          <entry key="html" value="58" />
           <entry key="html; charset=UTF-8" value="7" />
-          <entry key="txt" value="329" />
+          <entry key="txt" value="335" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="57" />
-          <entry key="ObjectiveC" value="8457" />
-          <entry key="PLAIN_TEXT" value="336" />
+          <entry key="HTML" value="58" />
+          <entry key="ObjectiveC" value="8473" />
+          <entry key="PLAIN_TEXT" value="342" />
         </counts>
       </usages-collector>
     </session>
@@ -122,17 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Socket.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
+            <state relative-caret-position="1000">
               <caret line="50" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/omar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -149,16 +122,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/commands.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/omar.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/omar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Starter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="660">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -167,7 +162,7 @@
         <entry file="file://$PROJECT_DIR$/HandlePOST.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -175,7 +170,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
+            <state relative-caret-position="800">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
@@ -193,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseResponse.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20">
-              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="220">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -219,7 +214,6 @@
         <option value="$PROJECT_DIR$/cmake-build-debug/html; charset=UTF-8" />
         <option value="$PROJECT_DIR$/HandlePOST.h" />
         <option value="$PROJECT_DIR$/CommandReader.cpp" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/omar.txt" />
         <option value="$PROJECT_DIR$/Starter.h" />
         <option value="$PROJECT_DIR$/ParseResponse.cpp" />
         <option value="$PROJECT_DIR$/HandleGET.cpp" />
@@ -230,8 +224,9 @@
         <option value="$PROJECT_DIR$/Utils.h" />
         <option value="$PROJECT_DIR$/ParseResponse.h" />
         <option value="$PROJECT_DIR$/HandlePOST.cpp" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/omar.html" />
         <option value="$PROJECT_DIR$/commands.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/omar.html" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/omar.txt" />
         <option value="$PROJECT_DIR$/Starter.cpp" />
       </list>
     </option>
@@ -255,6 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,7 +267,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,7 +293,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;127.0.0.1&quot; &quot;8080&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Client" TARGET_NAME="Client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Client" RUN_TARGET_NAME="Client">
+    <configuration name="Client" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;127.0.0.1&quot; &quot;8090&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Client" TARGET_NAME="Client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Client" RUN_TARGET_NAME="Client">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -323,18 +318,21 @@
       <workItem from="1574189941012" duration="13248000" />
       <workItem from="1574218318767" duration="12490000" />
       <workItem from="1574277686737" duration="20673000" />
+      <workItem from="1574308807732" duration="553000" />
+      <workItem from="1574309929761" duration="4014000" />
+      <workItem from="1574314865452" duration="415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86667000" />
+    <option name="totallyTimeSpent" value="91649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21472053" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22191478" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32901832" />
@@ -343,7 +341,7 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32864866" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32864866" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.32756758" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -371,7 +369,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Starter.cpp</url>
-          <line>43</line>
+          <line>32</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
@@ -390,20 +388,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/tst.png" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/html; charset=UTF-8">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/html; charset=UTF-8" />
     <entry file="file://$PROJECT_DIR$/HandlePOST.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#97#124#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -425,9 +414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#63#82#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,9 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -452,9 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#89#107#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -462,9 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#95#122#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -472,6 +449,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Socket.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -485,40 +469,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HandlePOST.cpp">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/omar.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/omar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseResponse.cpp">
+    <entry file="file://$PROJECT_DIR$/Starter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="660">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Socket.cpp">
+    <entry file="file://$PROJECT_DIR$/HandlePOST.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="460">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commands.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
+        <state relative-caret-position="800">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
@@ -530,17 +511,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/omar.txt">
+    <entry file="file://$PROJECT_DIR$/ParseResponse.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="220">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Starter.cpp">
+    <entry file="file://$PROJECT_DIR$/commands.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="20">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>

@@ -13,6 +13,15 @@ bool isHeaderComplete(char* buffer, int len, int &headerSize){
     return false;
 }
 
+int getHeaderSize(char* buffer){
+    int i = 0;
+    while(strncmp(buffer + i, "\r\n\r\n", 4) == 0){
+        i++;
+    }
+    i+=4;
+    return i;
+}
+
 
 bool isThereContentLength(char* buffer, int size, int &content_length){
     int i = 0;

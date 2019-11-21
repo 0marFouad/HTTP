@@ -5,6 +5,7 @@
 
 #define SUCCESS 1
 #define FAIL 0
+#define BUFFERSIZE 1048576
 
 #include <stdio.h>
 #include <sys/socket.h>

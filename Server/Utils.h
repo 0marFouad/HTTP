@@ -30,5 +30,6 @@ string getString(char* ptr);
 string getContentType(char* filename);
 void writeInFile(char* filename, char* buffer ,int bufferSize);
 string getFilenameFromRequest(char* buffer, string method);
+int getHeaderSize(char* buffer);
 
 #endif //CLIENT_UTILS_H

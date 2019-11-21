@@ -15,4 +15,4 @@
 
 void handleGetRequest(char* buffer, int client_socket);
 
-#endif //SERVER_HANDLEGET_H
+#endif

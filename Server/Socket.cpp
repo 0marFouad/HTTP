@@ -16,8 +16,7 @@ int waiting_for_request(int client_socket){
 }
 
 void handle_connection(int client_socket) {
-    while(1){
-        recv(client_socket);
+    recv(client_socket);
         //int status = waiting_for_request(client_socket);
 //        if(status == 0){
 //            printf("No more requests from client with fd = %d within the last 5 seconds, So the server will close the client connection\n",client_socket);
@@ -25,8 +24,6 @@ void handle_connection(int client_socket) {
 //            close(client_socket);
 //            break;
 //        }
-    }
-    connected_clients--;
 }
 
 void start_server(unsigned short server_port){
@@ -99,12 +96,20 @@ void recv(int client_socket){
     tv.tv_usec = 0;
     setsockopt(client_socket, SOL_SOCKET, SO_RCVTIMEO, (const char*)&tv, sizeof tv);
 
-    char* buffer = (char *) malloc(5000);
+    char* buffer = (char *) malloc(BUFFERSIZE);
     int receivedSize = 0;
     int headerSize = 0;
     int status = 0;
     while(status = recv(client_socket, buffer + receivedSize, 100, 0)){
         if(status == -1){
+            if(receivedSize > 0){
+                if(buffer[0] == 'G'){
+                    handleGetRequest(buffer, client_socket);
+                }else{
+                    handlePostRequest(buffer,client_socket);
+                }
+            }
+            close_connection(client_socket);
             break;
         }
         receivedSize += status;
@@ -115,19 +120,21 @@ void recv(int client_socket){
             receivedSize -= (headerSize);
         }else if(isHeaderComplete(buffer, receivedSize, headerSize) && isThereContentLength(buffer, headerSize, content_length)){
             if(receivedSize >= headerSize + content_length){
-                handlePostRequest(buffer,client_socket,headerSize + content_length);
+                handlePostRequest(buffer,client_socket);
                 buffer = &buffer[headerSize + content_length + 2];
                 receivedSize -= (headerSize + content_length + 2);
             }
+        }
+        if(status < 100 && receivedSize > 0){
+            break;
         }
     }
     if(receivedSize > 0){
         if(buffer[0] == 'G'){
             handleGetRequest(buffer, client_socket);
         }else{
-            handlePostRequest(buffer,client_socket,receivedSize);
+            handlePostRequest(buffer,client_socket);
         }
     }
 }
-
 
